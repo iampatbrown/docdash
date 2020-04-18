@@ -38,6 +38,7 @@
 <label for="nav-trigger" class="overlay"></label>
 
 <nav <?js if (env.conf.docdash.wrap) { ?>class="wrap"<?js } ?>>
+    <h2><a href="index.html"><?js if (env.conf.docdash.title) {?><?js= env.conf.docdash.title ?><?js } else { ?>Home<?js } ?></a></h2>
     <?js if (env.conf.docdash.search) { ?>
     <input type="text" id="nav-search" placeholder="Search" />
     <?js } ?>

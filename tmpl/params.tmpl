@@ -22,10 +22,8 @@
             }
 
             if ( paramRegExp.test(param.name) ) {
-                param.name = RegExp.$1;
-                parentParam.subparams = parentParam.subparams || [];
-                parentParam.subparams.push(param);
-                params[i] = null;
+            params[i - 1] = null
+            parentParam = null
             }
             else {
                 parentParam = param;
@@ -67,9 +65,6 @@
 
         <th>Type</th>
 
-        <?js if (params.hasAttributes) {?>
-        <th>Attributes</th>
-        <?js } ?>
 
         <?js if (params.hasDefault) {?>
         <th>Default</th>
@@ -88,7 +83,8 @@
 
         <tr>
             <?js if (params.hasName) {?>
-                <td class="name"><code><?js= param.name ?></code></td>
+                <td class="name"><code><?js= param.name ?></code><?js if (param.optional) { ?><i><sub>opt</sub></i><?js } ?></td>
+                
             <?js } ?>
 
             <td class="type">
@@ -97,21 +93,6 @@
             <?js } ?>
             </td>
 
-            <?js if (params.hasAttributes) {?>
-                <td class="attributes">
-                <?js if (param.optional) { ?>
-                    &lt;optional><br>
-                <?js } ?>
-
-                <?js if (param.nullable) { ?>
-                    &lt;nullable><br>
-                <?js } ?>
-
-                <?js if (param.variable) { ?>
-                    &lt;repeatable><br>
-                <?js } ?>
-                </td>
-            <?js } ?>
 
             <?js if (params.hasDefault) {?>
                 <td class="default">
