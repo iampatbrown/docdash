@@ -438,10 +438,10 @@ function linktoExternal(longName, name) {
  */
 
 function buildNav(members) {
+  var nav = '';
   var seen = {};
   var seenTutorials = {};
   var docdash = (env && env.conf && env.conf.docdash) || {};
-  var nav = '<h2><a href="index.html">' + (docdash && docdash.title ? docdash.title : 'Home') + '</a></h2>';
   if (docdash.menu) {
     for (var menu in docdash.menu) {
       nav += '<h2><a ';
