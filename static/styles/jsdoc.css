@@ -1,3 +1,6 @@
+/* prettier-ignore */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
 * {
   box-sizing: border-box;
 }
@@ -10,10 +13,10 @@ body {
 
 body {
   color: #4d4e53;
-  background-color: white;
+  background-color: #fefefe;
   margin: 0 auto;
   padding: 0 20px;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 16px;
 }
 
@@ -23,7 +26,7 @@ img {
 
 a,
 a:active {
-  color: #606;
+  color: #568cf0;
   text-decoration: none;
 }
 
@@ -37,7 +40,7 @@ article a {
 
 article a:hover,
 article a:active {
-  border-bottom-color: #222;
+  border-bottom-color: #568cf0;
 }
 
 article .description a {
@@ -58,7 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', 'Montserrat', sans-serif;
 }
 
 h1,
@@ -67,7 +70,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000;
+  color: #333;
   font-weight: 400;
   margin: 0;
 }
@@ -102,21 +105,21 @@ h4 {
 }
 
 h4.name {
-  color: #fff;
-  background: #6d426d;
-  box-shadow: 0 0.25em 0.5em #d3d3d3;
-  border-top: 1px solid #d3d3d3;
-  border-bottom: 1px solid #d3d3d3;
+  color: #333;
+  background: #ddd;
+  box-shadow: 0 0.35em 0.8em #e6e6e6;
+  /* border-top: 1px solid #d3d3d3; */
+  /* border-bottom: 1px solid #d3d3d3; */
   margin: 1.5em 0 0.5em;
-  padding: 0.75em 0 0.75em 10px;
+  padding: 1em 0 1em 14px;
 }
 
 h4.name a {
-  color: #fc83ff;
+  color: #568cf0;
 }
 
 h4.name a:hover {
-  border-bottom-color: #fc83ff;
+  border-bottom-color: #568cf0;
 }
 
 h5,
@@ -134,28 +137,28 @@ h6 {
 }
 
 .usertext h1 {
-  font-family: 'Source Sans Pro';
+  font-family: 'Roboto', 'Source Sans Pro';
   font-size: 24px;
   margin: 2.5em 0 1em;
   font-weight: 400;
 }
 
 .usertext h2 {
-  font-family: 'Source Sans Pro';
+  font-family: 'Roboto', 'Source Sans Pro';
   font-size: 18px;
   margin: 2em 0 0.5em;
   font-weight: 400;
 }
 
 .usertext h3 {
-  font-family: 'Source Sans Pro';
+  font-family: 'Roboto', 'Source Sans Pro';
   font-size: 15px;
   margin: 1.5em 0 0;
   font-weight: 400;
 }
 
 .usertext h4 {
-  font-family: 'Source Sans Pro';
+  font-family: 'Roboto', 'Source Sans Pro';
   font-size: 14px;
   margin: 0 0 0;
   font-weight: 400;
@@ -207,7 +210,7 @@ header {
 
 section {
   display: block;
-  background-color: #fff;
+  background-color: #fefefe;
   padding: 0 0 0 30px;
 }
 
@@ -217,7 +220,7 @@ section {
 
 .signature-attributes {
   font-size: 60%;
-  color: #eee;
+  color: #333;
   font-style: italic;
   font-weight: lighter;
 }
@@ -226,7 +229,7 @@ nav {
   float: left;
   display: block;
   width: 250px;
-  background: #fff;
+  background: #fefefe;
   overflow: auto;
   position: fixed;
   height: 100%;
@@ -256,7 +259,7 @@ nav h3 {
   line-height: 24px;
   margin: 15px 0 10px;
   padding: 0;
-  color: #000;
+  color: #333;
 }
 
 nav ul {
@@ -270,16 +273,17 @@ nav ul {
 
 nav ul a,
 nav ul a:active {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', 'Montserrat', sans-serif;
   line-height: 18px;
   padding: 0;
   display: block;
+  font-weight: 400;
   font-size: 16px;
 }
 
 nav a:hover,
 nav a:active {
-  color: #606;
+  color: #568cf0;
 }
 
 nav > ul {
@@ -287,7 +291,7 @@ nav > ul {
 }
 
 nav > ul > li > a {
-  color: #606;
+  color: #444;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -312,7 +316,7 @@ nav h2 {
 
 nav > h2 > a {
   margin: 10px 0 -10px;
-  color: #606 !important;
+  color: #444 !important;
 }
 
 footer {
@@ -346,11 +350,11 @@ footer {
 }
 
 .type-signature {
-  color: #ca79ca;
+  color: #333;
 }
 
 .type-signature:last-child {
-  color: #eee;
+  color: #333;
 }
 
 .name,
@@ -359,14 +363,14 @@ footer {
 }
 
 .signature {
-  color: #fc83ff;
+  color: #333;
 }
 
 .details {
   margin-top: 6px;
   border-left: 2px solid #ddd;
   line-height: 20px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .details dt {
@@ -411,6 +415,8 @@ footer {
 .prettyprint {
   font-size: 14px;
   overflow: auto;
+  background-color: #0d152a;
+  border-radius: 4px;
 }
 
 .prettyprint.source {
@@ -429,7 +435,8 @@ footer {
 }
 
 .prettyprint > code {
-  padding: 15px;
+  padding: 25px;
+  overflow: auto;
 }
 
 .prettyprint .linenums code {
@@ -500,7 +507,7 @@ th {
 
 thead tr,
 thead tr {
-  background-color: #fff;
+  background-color: #fefefe;
   font-weight: bold;
   border-bottom: 1px solid #ddd;
 }
@@ -541,13 +548,17 @@ thead tr {
 span.param-type,
 .params td .param-type,
 .param-type dd {
-  color: #606;
+  color: #333;
   font-family: Consolas, Monaco, 'Andale Mono', monospace;
 }
 
 .param-type dt,
 .param-type dd {
   display: inline-block;
+}
+
+.param-type a {
+  color: #568cf0;
 }
 
 .param-type {
@@ -595,7 +606,7 @@ span.param-type,
   position: relative;
   width: 2.5em;
   height: 0.3125rem;
-  background: #000;
+  background: #333;
   transition: 0.3s;
   border-radius: 2.5rem;
 }
@@ -605,7 +616,7 @@ span.param-type,
   content: '';
   height: 0.3125rem;
   width: 2.5rem;
-  background: #000;
+  background: #333;
   position: absolute;
   z-index: -1;
   transition: 0.3s 0.25s;
@@ -645,14 +656,14 @@ span.param-type,
 .nav-trigger:checked + label.x .navicon:before {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  background: #fff;
+  background: #fefefe;
 }
 
 .nav-trigger:checked + label.plus .navicon:after,
 .nav-trigger:checked + label.x .navicon:after {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  background: #fff;
+  background: #fefefe;
 }
 
 .nav-trigger:checked + label.plus {
@@ -701,7 +712,7 @@ html[data-search-mode] .level-hide {
   }
 
   nav {
-    background: #fff;
+    background: #fefefe;
     width: 250px;
     height: 100%;
     position: fixed;
