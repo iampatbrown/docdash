@@ -494,6 +494,8 @@ table {
   width: 100%;
   font-size: 14px;
   margin: 1em 0;
+  display: block;
+  overflow-x: scroll;
 }
 
 td,

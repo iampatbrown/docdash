@@ -22,10 +22,8 @@
             }
 
             if ( paramRegExp.test(param.name) ) {
-                param.name = RegExp.$1;
-                parentParam.subparams = parentParam.subparams || [];
-                parentParam.subparams.push(param);
-                params[i] = null;
+            params[i - 1] = null
+            parentParam = null
             }
             else {
                 parentParam = param;
