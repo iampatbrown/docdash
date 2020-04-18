@@ -577,7 +577,8 @@ span.param-type,
 .navicon-button {
   display: none;
   position: relative;
-  padding: 2.0625rem 1.5rem;
+  margin-right: 0.8rem;
+  padding: 1.9rem 1rem;
   transition: 0.25s;
   cursor: pointer;
   -webkit-user-select: none;
@@ -585,6 +586,8 @@ span.param-type,
   -ms-user-select: none;
   user-select: none;
   opacity: 0.8;
+  background-color: #eee;
+  border-radius: 50px;
 }
 .navicon-button .navicon:before,
 .navicon-button .navicon:after {
@@ -608,9 +611,9 @@ span.param-type,
 /* navicon */
 .navicon {
   position: relative;
-  width: 2.5em;
+  width: 2.2em;
   height: 0.3125rem;
-  background: #333;
+  background: #568cf0;
   transition: 0.3s;
   border-radius: 2.5rem;
 }
@@ -619,8 +622,8 @@ span.param-type,
   display: block;
   content: '';
   height: 0.3125rem;
-  width: 2.5rem;
-  background: #333;
+  width: 2.2rem;
+  background: #568cf0;
   position: absolute;
   z-index: -1;
   transition: 0.3s 0.25s;
@@ -646,8 +649,8 @@ span.param-type,
 
 /* Minus */
 .nav-trigger:checked + label {
-  -webkit-transform: scale(0.75);
-  transform: scale(0.75);
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 /* × and + */
@@ -660,14 +663,14 @@ span.param-type,
 .nav-trigger:checked + label.x .navicon:before {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  background: #fefefe;
+  background: #568cf0;
 }
 
 .nav-trigger:checked + label.plus .navicon:after,
 .nav-trigger:checked + label.x .navicon:after {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  background: #fefefe;
+  background: #568cf0;
 }
 
 .nav-trigger:checked + label.plus {
