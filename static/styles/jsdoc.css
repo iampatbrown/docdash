@@ -257,7 +257,7 @@ nav h3 {
   letter-spacing: 1px;
   font-weight: 700;
   line-height: 24px;
-  margin: 15px 0 10px;
+  margin: 15px 10px 10px;
   padding: 0;
   color: #333;
 }
@@ -287,7 +287,7 @@ nav a:active {
 }
 
 nav > ul {
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 nav > ul > li > a {
@@ -309,14 +309,16 @@ nav ul ul a:active {
 }
 
 nav h2 {
-  font-size: 13px;
-  margin: 10px 0 0 0;
-  padding: 0;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 15px 0 0 0;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 
 nav > h2 > a {
   margin: 10px 0 -10px;
-  color: #444 !important;
+  color: #568cf0;
 }
 
 footer {
