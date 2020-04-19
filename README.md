@@ -4,18 +4,34 @@
 
 A clean, responsive documentation template theme for JSDoc 3.
 
-![docdash-screenshot](https://cloud.githubusercontent.com/assets/447956/13398144/4dde7f36-defd-11e5-8909-1a9013302cb9.png)
-
-![docdash-screenshot-2](https://cloud.githubusercontent.com/assets/447956/13401057/e30effd8-df0a-11e5-9f51-66257ac38e94.jpg)
-
 ## Example
 
 See https://iampatbrown.github.io/thingy-pool/ for a sample demo. :rocket:
 
+## Changes
+
+The main changes:
+
+- Changed colors in css. Not all of them, only the ones that I needed for Thingy Pool
+- Removed Home navigation link creation from publish.js and added it to layout.tmpl so it could be above the search box
+- Home navigation title can be set in jsdoc.json with `{ "docdash": { "title": "Thingy Pool" } }`
+- Removed nested tables for subParams - instead hide the parent and display parent.subParam in same table
+- Removed attributes column from from params table - instead append _<sub>opt</sub>_ to indicate optional params. I didn't add anything to indicate nullable or variable params because I wasn't using them.
+- Fixed some styling issues with the code blocks to make it work better on my phone
+- Made tables scroll instead of stretch the screen size.
+
+This hasn't really been tested, so I'm not sure if the changes break stuff that I'm not using. Eg. I might have changed some colors that look strange somewhere or the subParam change was a bad idea. If anyone ends up using this and wants something fixed, just let me know. Have fun :)
+
+![screenshot-web-01](/screenshots/screenshot-web-01.png?raw=true)
+
+![screenshot-web-02](/screenshots/screenshot-web-02.png?raw=true)
+
+![screenshot-mob-01](/screenshots/screenshot-mob-01.png?raw=true) ![screenshot-mob-02](/screenshots/screenshot-mob-02.png?raw=true) ![screenshot-mob-03](/screenshots/screenshot-mob-03.png?raw=true)
+
 ## Install
 
 ```bash
-$ npm install docdash
+$ npm install iampatbrown/docdash
 ```
 
 ## Usage
@@ -80,6 +96,7 @@ Docdash supports the following options:
 ```json5
 {
   docdash: {
+    title: '' // Used to customize the Home navigation link. Defaults to 'Home'
     static: [false | true], // Display the static members inside the navbar
     sort: [false | true], // Sort the methods in the navbar
     sectionOrder: [
@@ -141,7 +158,7 @@ Docdash supports the following options:
 
 Place them anywhere inside your `jsdoc.json` file.
 
-## Contributors
+## Original Docdash Contributors
 
 [![0](https://sourcerer.io/fame/ar2rsawseen/clenemt/docdash/images/0)](https://sourcerer.io/fame/ar2rsawseen/clenemt/docdash/links/0)
 [![1](https://sourcerer.io/fame/ar2rsawseen/clenemt/docdash/images/1)](https://sourcerer.io/fame/ar2rsawseen/clenemt/docdash/links/1)
@@ -154,7 +171,7 @@ Place them anywhere inside your `jsdoc.json` file.
 
 ## Thanks
 
-Thanks to [lodash](https://lodash.com) and [minami](https://github.com/nijikokun/minami).
+Thanks to [docdash](https://github.com/clenemt/docdash), [lodash](https://lodash.com) and [minami](https://github.com/nijikokun/minami).
 
 ## License
 
