@@ -26,7 +26,7 @@ This hasn't really been tested, so I'm not sure if the changes break stuff that 
 
 ![screenshot-web-02](/screenshots/screenshot-web-02.png?raw=true)
 
-![screenshot-mob-01](/screenshots/screenshot-mob-01.png?raw=true) ![screenshot-mob-02](/screenshots/screenshot-mob-02.png?raw=true) ![screenshot-mob-03](/screenshots/screenshot-mob-03.png?raw=true)
+![screenshot-mob-01](/screenshots/screenshot-mob-01.png?raw=true)
 
 ## Install
 
